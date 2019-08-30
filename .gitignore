@@ -113,3 +113,6 @@ venv.bak/
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+data/*
+!data/README.md
