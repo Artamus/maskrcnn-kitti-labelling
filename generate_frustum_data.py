@@ -53,6 +53,7 @@ if __name__ == '__main__':
     detections_dir = args.detections
     kitti_dir = args.kitti
     output_dir = args.output
+    os.makedirs(output_dir, exist_ok=True)
 
     pointcloud_dir = os.path.join(kitti_dir, 'velodyne')
     calibration_dir = os.path.join(kitti_dir, 'calib')

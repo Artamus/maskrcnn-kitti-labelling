@@ -10,7 +10,7 @@ cd maskrcnn-kitti-labelling
 git submodule update --init --recursive
 ```
 
-Simply install the newest available TensorFlow, SciPy, NumPy and other things mandated by the `requirements.txt` in the Mask_RCNN directory.
+Simply install Python 3.5+, the newest available TensorFlow, SciPy, NumPy and other things mandated by the `requirements.txt` in the Mask_RCNN directory.
 Also install `scikit-learn`, `hdbscan`, `tqdm`.
 
 # Data format
