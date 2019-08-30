@@ -4,10 +4,25 @@ Code to label the pointcloud of the KITTI dataset using MaskRCNN. The goal of th
 As a baseline, there is also an implementation of using clustering to try and filter out bleeding outlier points and then forming a 3D bounding using the Convex Hull, as well as some scripts to demonstrate benchmarking that against ground truth.
 
 # Installation
-TODO
+```
+git clone https://github.com/Artamus/maskrcnn-kitti-labelling.git
+cd maskrcnn-kitti-labelling
+git submodule update --init --recursive
+```
+
+Simply install the newest available TensorFlow, SciPy, NumPy and other things mandated by the `requirements.txt` in the Mask_RCNN directory.
+Also install `scikit-learn`, `hdbscan`, `tqdm`.
 
 # Data format
-TODO
+This code expects to find KITTI data in the regular format of 
+```
+kitti_data_folder
+    |- image_2
+    |- label_2
+    |- calib
+    |- velodyne
+```
+where `kitti_data_folder` is passed as the path.
 
 # Usage
 ## Baseline scripts
@@ -16,4 +31,4 @@ All of the scripts require a path to the offline KITTI evaluator as an argument,
 
 
 ## Generating frustums
-TODO
+Simply run the `generate_frustum_data.py` to generate data in the `.npz` format.
