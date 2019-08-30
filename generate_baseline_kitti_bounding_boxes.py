@@ -215,7 +215,7 @@ if __name__ == '__main__':
         params['min_cluster_size'] = args.min_cluster_size
 
     if not os.path.isdir(output_points_dir):
-        os.makedirs(output_points_dir)
+        os.makedirs(output_points_dir, exist_ok=True)
 
     pointcloud_dir = os.path.join(kitti_dir, 'velodyne')
     calibration_dir = os.path.join(kitti_dir, 'calib')

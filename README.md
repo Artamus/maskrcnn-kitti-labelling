@@ -10,4 +10,10 @@ TODO
 TODO
 
 # Usage
+## Baseline scripts
+Run these scripts from the main folder, as they assume that for the proper path.
+All of the scripts require a path to the offline KITTI evaluator as an argument, I recommend using one from https://github.com/charlesq34/frustum-pointnets in the `train/kitti_eval` folder.
+
+
+## Generating frustums
 TODO
